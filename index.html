@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="icon" href="https://www.esports.net/wp-content/uploads/2020/05/kekw-emote-2.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            background-color: black;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            padding: 0;
+            margin: auto;
+
+
+        }
+
+
+
+        div {
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            vertical-align: middle;*/
+            background: black;
+            text-align: center; 
+            margin: 0;
+            position: absolute;
+            left: 30%;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        
+        input[type=text] {
+            border: 1.5px solid white;
+            border-radius: 5px;
+            width: 50%;
+            text-indent: 10px;
+        }
+
+        input[type=submit] {
+            border: 1.5px solid white;
+            border-radius: 5px;
+            width: 18%;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <h3>Guess the answer between 0 and 100</h3>
+
+        <form id="form">
+        <input required maxlength="3" type="text" id="answer">
+        <input type="submit">
+        </form>
+
+        <h4 id="trying"></h4>
+        <h5 id="amount"></h5>
+    
+      <script src="guess.js"></script>
+    </div>
+</body>
+</html>
